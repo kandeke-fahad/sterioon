@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sterio On</title>
+    <link rel="stylesheet" href="indexjs.css">
+    <script src="https://kit.fontawesome.com/2df5239ba6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#portfolio">Music</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Musician, Song Writer and Producer</p>
+                <h1>Hi, I'm <span>Sterio</span> On</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- About -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/IMG_0294_bg.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam error odio, ea ullam enim hic, debitis blanditiis culpa cumque eius facilis dolorum quaerat ab. Nisi reiciendis magnam consectetur distinctio.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- gallery -->
+
+<div class="gallery">
+
+    <div class="mySlides">
+        <div class="numbertext">1 / 19</div>
+        <img src="./images/IMG_0289.JPG" style="width: 100%;">
+    </div>
+    
+    <div class="mySlides">
+        <div class="numbertext">2 / 19</div>
+        <img src="./images/IMG_0290.JPG" style="width: 100%;">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 19</div>
+        <img src="./images/IMG_0291.JPG" style="width: 100%;">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">4 / 19</div>
+        <img src="./images/IMG_0292.JPG" style="width: 100%;">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 19</div>
+        <img src="./images/IMG_0292.png" style="width: 100%;">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">6 / 19</div>
+        <img src="./images/IMG_0293.JPG" style="width: 100%;">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">7 / 19</div>
+        <img src="./images/IMG_0294.JPG" style="width: 100%;">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">8 / 19</div>
+        <img src="./images/IMG_0986.JPG" style="width: 100%;">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">9 / 19</div>
+        <img src="./images/IMG_0991.JPG" style="width: 100%;">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">10 / 19</div>
+        <img src="./images/IMG_0994.JPG" style="width: 100%;">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">11 / 19</div>
+        <img src="./images/IMG_1094.PNG" style="width: 100%;">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">12 / 19</div>
+        <img src="./images/IMG_1295.JPG" style="width: 100%;">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">13 / 19</div>
+        <img src="./images/IMG_1296.JPG" style="width: 100%;">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">14 / 19</div>
+        <img src="./images/IMG_1297.JPG" style="width: 100%;">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">15 / 19</div>
+        <img src="./images/IMG_1298.JPG" style="width: 100%;">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">16 / 19</div>
+        <img src="./images/IMG_2555.JPG" style="width: 100%;">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">17 / 19</div>
+        <img src="./images/IMG_2556.JPG" style="width: 100%;">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">18 / 19</div>
+        <img src="./images/IMG_2561.JPG" style="width: 100%;">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">19 / 19</div>
+        <img src="./images/IMG_2562.JPG" style="width: 100%;">
+    </div>
+    
+
+    <!-- nxt and prev btns -->
+
+    <a onclick="plusSlides(-1)" class="prev">&#10094;</a>
+
+    <a onclick="plusSlides(1)" class="next">&#10095;</a>
+
+    <!-- image txt -->
+
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <!-- thumbnail images -->
+
+    <div class="img-row" id="gallery">
+
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_0289.JPG" style="width: 100%;" onclick="currentSlide(1)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_0290.JPG" style="width: 100%;" onclick="currentSlide(2)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_0291.JPG" style="width: 100%;" onclick="currentSlide(3)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_0292.JPG" style="width: 100%;" onclick="currentSlide(4)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_0292.png" style="width: 100%;" onclick="currentSlide(5)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_0293.JPG" style="width: 100%;" onclick="currentSlide(6)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_0293.JPG" style="width: 100%;" onclick="currentSlide(7)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_0986.JPG" style="width: 100%;" onclick="currentSlide(8)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_0991.JPG" style="width: 100%;" onclick="currentSlide(9)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_0994.JPG" style="width: 100%;" onclick="currentSlide(10)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_1094.PNG" style="width: 100%;" onclick="currentSlide(11)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_1295.JPG" style="width: 100%;" onclick="currentSlide(12)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_2561.JPG" style="width: 100%;" onclick="currentSlide(13)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_1295.JPG" style="width: 100%;" onclick="currentSlide(14)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_1296.JPG" style="width: 100%;" onclick="currentSlide(15)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_1297.JPG" style="width: 100%;" onclick="currentSlide(16)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_1298.JPG" style="width: 100%;" onclick="currentSlide(17)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_2555.JPG" style="width: 100%;" onclick="currentSlide(18)">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./images/IMG_2556.JPG" style="width: 100%;" onclick="currentSlide(19)">
+        </div>
+
+    </div>
+
+
+</div>
+
+<!-- Portfolio -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/3655a5033c0e2d069da940039f434a48.jpg" alt="">
+                <div class="layer">
+                    <h3>Songs</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/bc53745d57bab8080e975d666d5e3240.jpg" alt="">
+                <div class="layer">
+                    <h3>Albums</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/ec34481a4b27b1e9828591036e7da9f1.jpg" alt="">
+                <div class="layer">
+                    <h3>Song Lyrics</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- contact -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>fizo.sterio@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i> 0701-203059</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100089080359853"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/fahad_kandeke"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/kandekefahad/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@kandekefahad?lang=ar"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://youtube.com/@sterioon?feature=shared"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="/images/How to Get Rich.pdf" download="" class="btn btn2">Download free pdf</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">hello</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &copy; SterioOn 2024</p>
+    </div>
+</div>
+
+<script src="javascript.js"></script>
+</body>
+</html>
